@@ -3,6 +3,7 @@ var $submitButton = $('.btn')
 var $toDoList = $('.list')
 var $checkbox = $('input[type=checkbox]')
 var $starIcon = $('.glyphicon.glyphicon-star')
+var $removeIcon = $('.glyphicon.glyphicon-remove')
 
 
 function addToList(){
@@ -22,6 +23,7 @@ function addToList(){
     $toDoInput.val('')
     $newCheckbox.on('click', crossOffList)
     $newStarIcon.on('click', changeStarColor)
+    $newRemoveIcon.on('click', removeListItem)
     
 }
 
@@ -49,9 +51,16 @@ function changeStarColor (){
     }   
 }
 
+function removeListItem(){
+   $(this).parent().fadeOut()
+}
+
+
 $submitButton.on('click', addToList)
 $checkbox.on('click', crossOffList)
 $starIcon.on('click', changeStarColor)
+$removeIcon.on('click', removeListItem)
+
 
 
 
