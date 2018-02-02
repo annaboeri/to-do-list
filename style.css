@@ -57,13 +57,14 @@ html, body {
   form.form {
     color: #473e39;
     height: 60px;
-    margin: 0 auto 5px;
+    margin: 0 auto 5px;;
     padding: 0;
     width: 520px;
   }
   
   .form-container {
     width: 560px;
+    margin: 0 auto 5px;
   }
   
   .form input {
@@ -75,9 +76,11 @@ html, body {
     font-family: 'Arvo', serif;
     font-size: 16px;
     height: 60px;
-    margin: 0 5px 0 0;
     padding: 0 20px;
+    margin-left: 20px;
+    margin-right: 5px;
     width: 455px;
+
   }
   
   .form input:focus {

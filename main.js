@@ -61,8 +61,13 @@ $checkbox.on('click', crossOffList)
 $starIcon.on('click', changeStarColor)
 $removeIcon.on('click', removeListItem)
 
+/*
+ event delegation
 
+$('.list').on('click', ':checkbox', myFunction)
+$('.list').on('click', '.glyphicon-remove', myOtherFunction)
 
+*/
 
 
 
